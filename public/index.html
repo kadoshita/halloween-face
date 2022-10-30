@@ -8,15 +8,17 @@
 
 <body>
     <div class="container">
-        <select id="camera-select">
-            <option value="user">フロントカメラ</option>
-            <option value="environment">バックカメラ</option>
-        </select>
         <video id="input-video" muted autoplay playsinline style="display: none;"></video>
         <canvas id="output-canvas" width="1280px" height="720px">
     </div>
     <div id="overlay-element" style="position: absolute;">
         🎃
+    </div>
+    <div>
+        <select id="camera-select">
+            <option value="user">フロントカメラ</option>
+            <option value="environment">バックカメラ</option>
+        </select>
     </div>
 </body>
 <script src="./main.js" type="module"></script>
